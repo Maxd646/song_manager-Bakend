@@ -3,9 +3,9 @@ services:
     name: songify-backend
     env: python
     buildCommand: ""
-    startCommand: gunicorn song_manager_django_backend.wsgi
+    startCommand: gunicorn SONG_MANAGER_DJANGO_BACKEND.wsgi
     envVars:
       - key: DJANGO_SETTINGS_MODULE
-        value: song_manager_django_backend.settings
+        value: SONG_MANAGER_DJANGO_BACKEND.settings
       - key: PYTHON_VERSION
         value: 3.11.8
