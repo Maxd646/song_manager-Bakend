@@ -1,1 +1,1 @@
-web: gunicorn song_manager_django_backend.wsgi
+web: gunicorn core.wsgi

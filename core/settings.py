@@ -86,7 +86,8 @@ CSRF_TRUSTED_ORIGINS = [
     "https://songifyhub.onrender.com",         # Render backend itself (if needed for admin login, etc.)
 ]
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",                   # For local development
+    "http://localhost:3000",  
+    "http://localhost:8081" ,               # For local development
     "https://songifyhub.vercel.app",           # Your deployed frontend
 ]
 CORS_ALLOW_CREDENTIALS = True  # Allow cookies to be sent with CORS requests
