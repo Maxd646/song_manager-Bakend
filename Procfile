@@ -1,0 +1,1 @@
+web: gunicorn song-manager-django-backend.wsgi

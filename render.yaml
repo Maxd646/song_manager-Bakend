@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: songify-backend
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn song-manager-django-backend.wsgi
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: song-manager-django-backend.settings
+      - key: PYTHON_VERSION
+        value: 3.11
